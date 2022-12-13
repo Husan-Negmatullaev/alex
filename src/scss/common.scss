@@ -1,0 +1,93 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.page {
+
+  // .page__main-section
+
+  &__main-section {}
+}
+
+//========================================================================================================================================================
+
+.title {
+
+  // .title__label
+
+  &__label {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: rem(12);
+    line-height: math.div(24, 12);
+    color: $greyColor;
+    letter-spacing: em(7.5, 12);
+    display: inline-flex;
+    align-items: center;
+    gap: rem(16);
+
+    &::before {
+      content: '';
+      display: block;
+      width: rem(16);
+      height: rem(2);
+      background-color: #D9D9D9;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: em(9, 12);
+    }
+
+    &_margin {
+      &:not(:last-child) {
+        margin-bottom: em(16, 12);
+      }
+    }
+  }
+
+  // .title__title
+
+  &__title {
+    font-weight: 700;
+    font-size: rem(36);
+    line-height: math.div(45, 36);
+    font-family: 'Plus Jakarta Sans';
+
+    &_big {
+      font-size: rem(44);
+      line-height: math.div(55, 44);
+    }
+  }
+
+  &__purple {
+    color: #7E74F1;
+  }
+}
+
+.text {
+  line-height: math.div(32, 16);
+
+  p {
+    &:not(:last-child) {
+      margin-bottom: rem(15);
+    }
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  @include adaptiveValue("column-gap", 34, 25);
+  row-gap: rem(8);
+  // .social__link
+
+  &__link {
+    font-size: rem(24);
+    transition: all 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $purpleColor;
+      }
+    }
+  }
+}

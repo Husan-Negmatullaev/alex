@@ -1,0 +1,42 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+  display: inline-flex;
+  padding: rem(16) rem(24);
+  background-color: $purpleColor;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+  border: rem(1) solid #EAE6FE;
+  border-radius: rem(8);
+  font-size: rem(14);
+  line-height: math.div(17, 14);
+  font-weight: 500;
+
+  @media (max-width:$mobile) {
+    padding: rem(10) rem(14);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {}
+  }
+
+  &._fw {
+    width: 100%;
+  }
+
+  // .button_transparent
+
+  &_transparent {
+    background-color: #fff;
+    color: #000;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $purpleColor;
+        border: rem(1) solid $purpleColor;
+        color: #fff;
+      }
+    }
+  }
+}

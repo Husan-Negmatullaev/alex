@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="page__main-section main-section">
+          <div class="main-section__container">
+            <div class="main-section__content">
+              <div class="main-section__title title">
+                <div class="title__label title__label_margin">MY NAME IS</div>
+                <h1 class="title__title title__title_big">
+                  Alex <span class="title__purple">Smith.</span>
+                </h1>
+              </div>
+              <div class="main-section__text text">
+                <p>
+                  Creative front-end developer with more than +5 years of experience in enterprise
+                  companies and startups. Proficient in JavaScript, Angular, and React. Passionate
+                  about UI/UX
+                </p>
+              </div>
+              <div class="main-section__social social">
+                <a href="" class="social__link _icon-instagram"></a>
+                <a href="" class="social__link _icon-github"></a>
+                <a href="" class="social__link _icon-twitter"></a>
+                <a href="" class="social__link _icon-linkedin"></a>
+              </div>
+            </div>
+            <div class="main-section__decor">
+              <div class="main-section__media">
+                <div class="main-section__picture">
+                  <img src="@img/main/person.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__services services">
+          <div class="services__container">
+            <div class="services__header">
+              <div class="services__title title">
+                <div class="title__label">SERVICES</div>
+                <h2 class="title__title">Specialized in</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>
